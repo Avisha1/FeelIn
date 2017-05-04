@@ -16,8 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".PainActivity" />
-        <activity android:name=".MedsActivity">
-        </activity>
+        <activity android:name=".MedsActivity"/>
+        <activity android:name=".SholderLeft"/>
     </application>
 
 </manifest>

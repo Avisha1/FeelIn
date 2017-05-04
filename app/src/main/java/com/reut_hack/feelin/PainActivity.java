@@ -1,6 +1,6 @@
 package com.reut_hack.feelin;
 
-import android.graphics.Color;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -11,19 +11,20 @@ import butterknife.ButterKnife;
 
 public class PainActivity extends AppCompatActivity {
 
+    @BindView(R.id.draw)
     MyDrawView myDrawView;
 
     @BindView(R.id.rude_seekbar)
     SeekBar mRudeSeekbar;
 
+    private Context mContext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pain);
         ButterKnife.bind(this);
 
-
-        myDrawView = (MyDrawView) findViewById(R.id.draw);
+        mContext = this;
         myDrawView.mPaint.setXfermode(null);
 
 
@@ -35,18 +36,56 @@ public class PainActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 
-                if(progress>=0 && progress<=3){
+                int myColor = -1;
+                switch(progress){
 
-                    myDrawView.changeColor(Color.BLACK);
-                    //myDrawView.mPaint.setColor(Color.BLACK);
-                            //0xF76B1C);
+                    case 1:
+                        myColor = mContext.getResources().getColor(R.color.slider_gradient_bottom);
+                        break;
+
+                    case 2:
+                        myColor = mContext.getResources().getColor(R.color.slider_gradient_3);
+                        break;
+
+                    case 3:
+                        myColor = mContext.getResources().getColor(R.color.slider_gradient_3);
+                        break;
+
+                    case 4:
+                        myColor = mContext.getResources().getColor(R.color.slider_gradient_4);
+                        break;
+
+                    case 5:
+                        myColor = mContext.getResources().getColor(R.color.slider_gradient_bottom);
+                        break;
+
+                    case 6:
+                        myColor = mContext.getResources().getColor(R.color.slider_gradient_6);
+                        break;
+
+                    case 7:
+                        myColor = mContext.getResources().getColor(R.color.slider_gradient_7);
+                        break;
+
+                    case 8:
+                        myColor = mContext.getResources().getColor(R.color.slider_gradient_8);
+                        break;
+
+                    case 9:
+                        myColor = mContext.getResources().getColor(R.color.slider_gradient_9);
+                        break;
+
+                    case 10:
+                        myColor = mContext.getResources().getColor(R.color.slider_gradient_top);
+                        break;
+
+                    default:
+                        myColor = mContext.getResources().getColor(R.color.slider_gradient_bottom);
                 }
-                else if(progress>=4 && progress<=7){
-                    myDrawView.changeColor(Color.BLUE);//0xFBDA61);
-                }
-                else{
-                    myDrawView.changeColor(Color.GREEN);//0xC9FB61);
-                }
+
+                myDrawView.mPaint.setColor(myColor);
+
+
             }
 
             @Override
