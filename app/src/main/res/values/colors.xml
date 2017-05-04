@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="slider_thumb">#E5E5E5</color>
+    <color name="slider_gradient_bottom">#F76B1C</color>
+    <color name="slider_gradient_mid">#FBDA61</color>
+    <color name="slider_gradient_top">#C9FB61</color>
+    <color name="thumb_shadow">#80000000</color>
 </resources>

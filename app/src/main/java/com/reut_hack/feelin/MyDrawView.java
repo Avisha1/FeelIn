@@ -47,6 +47,13 @@ public class MyDrawView extends View {
 
     }
 
+    public void changeColor(int color){
+
+        //validate color
+        mBitmapPaint.setColor(color);
+       // mCanvas.drawPa
+
+    }
 
 
     @Override

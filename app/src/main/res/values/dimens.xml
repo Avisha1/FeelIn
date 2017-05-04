@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="slider_thumb_size">35dp</dimen>
+    <dimen name="slider_corner_radius">7dp</dimen>
+    <dimen name="seekbar_height">38dp</dimen>
+    <dimen name="display_extra_margin_top">10dp</dimen>
+
+
+
+</resources>
