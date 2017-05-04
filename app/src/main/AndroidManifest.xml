@@ -19,6 +19,7 @@
         <activity android:name=".PainActivity"
             android:label="@string/title_text_pain_act"/>
         <activity android:name=".SholderLeft" />
+        <activity android:name=".MedsActivity"/>
     </application>
 
 </manifest>
