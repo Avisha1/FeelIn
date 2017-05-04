@@ -8,6 +8,10 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
+    static final int GET_COLORED_AREA = 1;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this, PainActivity.class);
+                //startActivityForResult(intent, GET_COLORED_AREA);
                 startActivity(intent);
             }
         });
@@ -35,5 +40,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        if (requestCode == GET_COLORED_AREA) {
+            // Make sure the request was successful
+            if (resultCode == RESULT_OK) {
+
+            }
+        }
     }
 }

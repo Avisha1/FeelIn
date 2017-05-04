@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Feel In</string>
     <string name="image_desc">Description</string>
+
+    <string name="btn_text_pain_act">סיים ></string>
+    <string name="title_text_pain_act">צבע את החלק הכואב</string>
+
+    <string name="btn_text_main_act">הלאה ></string>
+    <string name="title_text_main_act">בחר אזור כללי להתמקדות</string>
+
 </resources>

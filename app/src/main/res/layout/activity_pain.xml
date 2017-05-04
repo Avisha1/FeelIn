@@ -24,7 +24,8 @@
         tools:layout_editor_absoluteY="12dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/button" />
 
     <SeekBar
         android:id="@+id/rude_seekbar"
@@ -39,5 +40,14 @@
         android:max="10"
         tools:layout_editor_absoluteY="211dp"
         tools:layout_editor_absoluteX="148dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text_pain_act"
+        android:id="@+id/btn_pain_activity"
+        style="@style/bottom_button_style"
+        android:layout_alignParentBottom="true"
+        android:supportsRtl="true" />
 
 </RelativeLayout>
