@@ -33,7 +33,8 @@ public class MyDrawView extends View {
         mPaint = new Paint();
         mPaint.setAntiAlias(true);
         mPaint.setDither(true);
-        mPaint.setColor(Color.RED);
+
+        mPaint.setColor(getContext().getResources().getColor(R.color.slider_gradient_bottom));
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setStrokeJoin(Paint.Join.ROUND);
         mPaint.setStrokeCap(Paint.Cap.ROUND);
@@ -63,8 +64,8 @@ public class MyDrawView extends View {
         mBitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
         mCanvas = new Canvas(mBitmap);
 
-        bitmapBackup = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
-        bitmapBackupCanvas = new Canvas(bitmapBackup);
+//        bitmapBackup = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
+//        bitmapBackupCanvas = new Canvas(bitmapBackup);
     }
 
 
@@ -94,7 +95,7 @@ public class MyDrawView extends View {
 
         View v1 = this;
         v1.setDrawingCacheEnabled(true);
-        this.bitmapBackup = Bitmap.createBitmap(v1.getDrawingCache());
+//        this.bitmapBackup = Bitmap.createBitmap(v1.getDrawingCache());
         v1.setDrawingCacheEnabled(false);
 
 

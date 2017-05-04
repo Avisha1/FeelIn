@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".PainActivity"></activity>
+        <activity android:name=".SholderLeft"/>
     </application>
 
 </manifest>
