@@ -23,6 +23,8 @@
         <activity android:name=".SholderLeft" />
         <activity android:name=".MedsActivity" />
         <activity android:name=".PainSenseActivity" />
+        <activity android:name=".DocActivity" />
+        <activity android:name=".MoodActivity"/>
     </application>
 
 </manifest>
