@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -18,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     static final int GET_COLORED_AREA = 1;
 
     @BindView(R.id.full_body_image)
-    LinearLayout mLayout;
+    RelativeLayout mLayout;
 
     @BindView(R.id.btn_main_activity)
     Button mBtnGoToPainSense;

@@ -34,7 +34,7 @@ public class MyDrawView extends View {
         mPaint.setAntiAlias(true);
         mPaint.setDither(true);
 
-        mPaint.setColor(getContext().getResources().getColor(R.color.slider_gradient_bottom));
+        mPaint.setColor(getContext().getResources().getColor(R.color.slider_gradient_mid));
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setStrokeJoin(Paint.Join.ROUND);
         mPaint.setStrokeCap(Paint.Cap.ROUND);
