@@ -38,7 +38,12 @@ public class ButtonAdapter extends RecyclerView.Adapter<ButtonAdapter.BtnViewHol
         holder.btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                holder.btn.setSelected(true);
+
+                if(holder.btn.isSelected())
+                    holder.btn.setSelected(false);
+                else
+                    holder.btn.setSelected(true);
+
             }
         });
     }
