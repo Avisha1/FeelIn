@@ -1,11 +1,14 @@
 package com.reut_hack.feelin;
 
+import android.annotation.TargetApi;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -13,6 +16,9 @@ import butterknife.ButterKnife;
 public class MainActivity extends AppCompatActivity {
 
     static final int GET_COLORED_AREA = 1;
+
+    @BindView(R.id.full_body_image)
+    LinearLayout mLayout;
 
     @BindView(R.id.btn_main_activity)
     Button mBtnGoToPainSense;
@@ -53,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @TargetApi(Build.VERSION_CODES.KITKAT)
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
@@ -60,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
             // Make sure the request was successful
             if (resultCode == RESULT_OK) {
                 mBtnGoToPainSense.setVisibility(View.VISIBLE);
+                mLayout.setBackground(getResources().getDrawable(R.drawable.body_filled));
             }
             else{
 

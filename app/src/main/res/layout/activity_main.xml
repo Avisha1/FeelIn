@@ -8,10 +8,11 @@
     tools:context="com.reut_hack.feelin.MainActivity">
 
     <LinearLayout
+        android:id="@+id/full_body_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@drawable/figure"
+        android:background="@drawable/body_idle"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
 

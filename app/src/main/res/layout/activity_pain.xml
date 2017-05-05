@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="487dp"
         android:contentDescription="@string/image_desc"
-        app:srcCompat="@drawable/sholder"
+        app:srcCompat="@drawable/shoulder"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="12dp"
         android:layout_alignParentTop="true"
