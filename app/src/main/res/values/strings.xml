@@ -9,7 +9,11 @@
     <string name="title_text_main_act">בחר אזור כללי להתמקדות</string>
 
     <string name="title_text_pain_sense">סמן את תחושת הכאב</string>
-
     <string name="title_text_med">מעקב אחר תרופות</string>
+    <string name="title_text_doctor">התיעוד נשלח בהצלחה</string>
+    <string name="title_text_mood">ספר על ההרגשה שלך</string>
+
+    <string name="btn_text_doc_act">המלצות הרופא ></string>
+
 
 </resources>
