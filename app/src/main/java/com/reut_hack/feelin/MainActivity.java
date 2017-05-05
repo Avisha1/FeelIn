@@ -4,22 +4,33 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
     static final int GET_COLORED_AREA = 1;
 
+    @BindView(R.id.btn_main_activity)
+    Button mBtnGoToPainSense;
 
+    @BindView(R.id.focus)
+    ImageView focus;
+
+    @BindView(R.id.stomach)
+    ImageView stomach;
+
+    @BindView(R.id.sholdrleft)
+    ImageView sholderleft;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        ImageView focus=(ImageView)findViewById(R.id.focus);
-        ImageView stomach=(ImageView)findViewById(R.id.stomach);
-        ImageView sholderleft=(ImageView)findViewById(R.id.sholdrleft);
+        ButterKnife.bind(this);
 
 
 
@@ -27,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this, PainActivity.class);
-                //startActivityForResult(intent, GET_COLORED_AREA);
-                startActivity(intent);
+                startActivityForResult(intent, GET_COLORED_AREA);
+                //startActivity(intent);
             }
         });
 
@@ -48,8 +59,17 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == GET_COLORED_AREA) {
             // Make sure the request was successful
             if (resultCode == RESULT_OK) {
+                mBtnGoToPainSense.setVisibility(View.VISIBLE);
+            }
+            else{
 
             }
         }
+    }
+
+    public void goToPainSenseActivity(){
+
+        //TODO
+        //go to pain sense activity
     }
 }
