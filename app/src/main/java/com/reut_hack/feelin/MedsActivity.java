@@ -17,12 +17,12 @@ public class MedsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_meds);
 
-        RecyclerView rv = (RecyclerView)findViewById(R.id.rv);
+        RecyclerView rv = (RecyclerView) findViewById(R.id.rv);
         rv.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(this);
         rv.setLayoutManager(llm);
 
-        MedsAdapter adapter = new MedsAdapter(initializeData());
+        MedicineAdapter adapter = new MedicineAdapter(initializeData());
         rv.setAdapter(adapter);
     }
 

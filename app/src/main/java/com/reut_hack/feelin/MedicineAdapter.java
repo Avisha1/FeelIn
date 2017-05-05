@@ -14,11 +14,11 @@ import java.util.List;
  * Created by shaharavigezer on 05/05/2017.
  */
 
-public class MedsAdapter extends RecyclerView.Adapter<MedsAdapter.MedsViewHolder> {
+public class MedicineAdapter extends RecyclerView.Adapter<MedicineAdapter.MedsViewHolder> {
 
     List<Medicine> meds;
 
-    public MedsAdapter(List<Medicine> meds) {
+    public MedicineAdapter(List<Medicine> meds) {
         this.meds = meds;
     }
 
@@ -41,12 +41,6 @@ public class MedsAdapter extends RecyclerView.Adapter<MedsAdapter.MedsViewHolder
         holder.medName.setText(meds.get(i).name);
         holder.medParagraph.setText(meds.get(i).paragraph);
         holder.medPhoto.setImageResource(meds.get(i).photoId);
-
-        /*
-        personViewHolder.personName.setText(persons.get(i).name);
-    personViewHolder.personAge.setText(persons.get(i).age);
-    personViewHolder.personPhoto.setImageResource(persons.get(i).photoId);
-         */
 
     }
 
