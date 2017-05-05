@@ -8,6 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="bottom_button_style">
+        <item name="android:background">@color/bottom_button_bg</item>
+        <item name="android:textColor">@color/bottom_button_text</item>
+    </style>
+
 
 
 

@@ -1,10 +1,12 @@
 package com.reut_hack.feelin;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.SeekBar;
+import android.content.Intent;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -98,6 +100,11 @@ public class PainActivity extends AppCompatActivity {
 
             }
         });
+    }
 
+    public void goBackToMainActivity(View view){
+        Intent returnIntent = new Intent();
+        setResult(Activity.RESULT_OK,returnIntent);
+        finish();
     }
 }

@@ -17,5 +17,9 @@
     <color name="slider_gradient_8">#DDEE61</color>
     <color name="slider_gradient_9">#D3F461</color>
 
+    <color name="bottom_button_bg">#5fc4bc</color>
+    <color name="bottom_button_text">#ffffff</color>
+
+
     <color name="thumb_shadow">#80000000</color>
 </resources>
